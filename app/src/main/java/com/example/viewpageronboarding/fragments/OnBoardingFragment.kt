@@ -45,9 +45,11 @@ class OnBoardingFragment: Fragment() {
     }
     //initialize the viewpager
     private fun initViewPager(view:View) {
+        //adding boarding fragments to the list
         fragments.add(DestinationFragment())
         fragments.add(DateFagment())
         fragments.add(RelaxingFragment())
+
         dots = view.findViewById<DotsIndicator>(R.id.worm_dots_indicator)
         val adapter = ViewPagerAdapter(requireActivity(), fragments)
         viewPager = view.findViewById(R.id.viewPager)
@@ -64,13 +66,13 @@ class OnBoardingFragment: Fragment() {
                 }
                 else if (position == fragments.size - 1) {
                     prevButton.visibility = View.VISIBLE
-                    nextButton.text = "Finish"
+                    nextButton.text = resources.getText(R.string.finish)
                     nextButton.setOnClickListener {
                         findNavController().navigate(R.id.action_onBoardingFragment_to_homeFragment)
                     }
                 } else {
                     prevButton.visibility = View.VISIBLE
-                    nextButton.text = "Next"
+                    nextButton.text = resources.getText(R.string.next)
                     nextButton.setOnClickListener {
                         viewPager.currentItem = viewPager.currentItem + 1
                     }

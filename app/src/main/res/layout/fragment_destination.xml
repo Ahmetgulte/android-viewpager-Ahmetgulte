@@ -23,7 +23,7 @@
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:textColor="#407BFF"
+        android:textColor="@color/light_blue"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

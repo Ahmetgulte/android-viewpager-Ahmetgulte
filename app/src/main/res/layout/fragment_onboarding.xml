@@ -19,11 +19,11 @@
         android:id="@+id/worm_dots_indicator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:dotsColor="#FF407BFF"
+        app:dotsColor="@color/light_blue"
         app:dotsCornerRadius="6dp"
         app:dotsSize="12dp"
         app:dotsSpacing="4dp"
-        app:selectedDotColor="#FF407BFF"
+        app:selectedDotColor="@color/light_blue"
         app:dotsStrokeWidth="2dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,10 +37,10 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:text="Next"
+        android:text="@string/next"
         android:textAllCaps="false"
         style="@style/Widget.MaterialComponents.Button.TextButton"
-        android:textColor="#FF407BFF"
+        android:textColor="@color/light_blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -51,9 +51,9 @@
         android:layout_marginStart="16dp"
         android:layout_marginBottom="16dp"
         android:textAllCaps="false"
-        android:text="Prev"
+        android:text="@string/prev"
         style="@style/Widget.MaterialComponents.Button.TextButton"
-        android:textColor="#FF407BFF"
+        android:textColor="@color/light_blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
